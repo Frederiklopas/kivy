@@ -415,7 +415,7 @@ class WindowBase(EventDispatcher):
 
     def _get_size(self):
         r = self._rotation
-        print(self._size,' SIZEEEE')
+        Logger.info(self._size)
         w, h = self._size
         if self._density != 1:
             w, h = self._win._get_gl_size()
